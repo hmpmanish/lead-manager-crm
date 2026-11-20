@@ -1,0 +1,29 @@
+{
+  "name": "lead-manager-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready Full Stack Lead Manager CRM application for Meru Technosoft screening assignment",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:server": "npm --prefix server run build",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:server && npm run build:client",
+    "test": "npm --prefix server run test",
+    "test:coverage": "npm --prefix server run test:coverage",
+    "prisma:generate": "npm --prefix server run prisma:generate",
+    "prisma:push": "npm --prefix server run prisma:push"
+  },
+  "keywords": [
+    "crm",
+    "lead-manager",
+    "full-stack",
+    "react",
+    "express",
+    "typescript",
+    "prisma"
+  ],
+  "author": "Full Stack Developer Candidate",
+  "license": "MIT"
+}
